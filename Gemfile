@@ -9,12 +9,14 @@ gem 'rails', '~> 5.2.0'
 #ggroup :development do
 #  gem 'sqlite3'
 #end
-
-group :production do
-  gem 'pg'
-end
-
+gem 'rb-readline' 
+#group :production do
+ # gem 'pg'
+#end
+gem 'devise'
+gem 'gravtastic'
 gem 'carrierwave'
+gem 'mini_magick', '3.8.0'
 gem 'net-ssh'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -70,3 +72,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'devise'
+gem 'activeadmin'
+gem 'inherited_resources'
